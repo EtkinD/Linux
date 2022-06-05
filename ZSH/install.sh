@@ -11,7 +11,7 @@ if [ ! -f $P/.zshrc_backup ]; then
     fi
 fi
 
-cd ~
+cd $HOME
 
 ## --------------------------------------------------
 echo "Installing zsh and changing default shell"
@@ -29,7 +29,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 ## --------------------------------------------------
-cp $P/.zshrc_backup ~/.zshrc
+cp $P/.zshrc_backup $HOME/.zshrc
 
-
+## --------------------------------------------------
 echo "Done!"
+exit 0
