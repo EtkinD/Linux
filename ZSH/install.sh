@@ -30,6 +30,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 ## --------------------------------------------------
 cp $P/.zshrc_backup $HOME/.zshrc
+cp $p/.custom_source.sh $HOME/.custom_source.sh
 
 ## --------------------------------------------------
 echo "Done!"
